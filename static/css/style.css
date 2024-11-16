@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  
+  /* Main Section start */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .main .main-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .main .main-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 50px;
+  }
+  .main .main-text h1 {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+  .main .main-text h1 > span {
+    font-family: mv boli;
+    color: rgb(14, 250, 14);
+  }
+  .main .main-text p {
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 70px;
+  }
+  .main .main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(14, 250, 14);
+    border-radius: 5px;
+  }
+  .main .main-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .main .main-btn:hover {
+    background-color: green;
+  }
+  /* End of Main Section */
+  
+  
+  
+  /* Menu Section start */
+  .menu {
+    width: 98%;
+    border-radius: 5px;
+    margin: 12px;
+    background-color: rgb(214, 214, 214);
+    padding: 20px 50px;
+  }
+  .menu .menu-text {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .menu .menu-text h1 {
+    margin: 50px 0;
+  }
+  .menu .menu-text h1 span {
+    font-family: mv boli;
+    text-decoration: underline;
+    color: rgb(37, 187, 37);
+  }
+  .shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 250px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.7);
+    margin: 15px;
+  }
+  .menu-card .card-image {
+    height: 200px;
+    width: 240px;
+    overflow: hidden;
+    background: black;
+  }
+  .menu-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+  }
+  .menu-card .card-image:hover img {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  .menu-card .card-image i {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 20px;
+    color: black;
+    z-index: 5;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .menu-card:hover .card-image i {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  .menu-card .card-image i:hover {
+    cursor: pointer;
+    color: rgb(14, 250, 14);
+  }
+  .menu-card .card-text {
+    text-align: center;
+    height: 180px;
+    /* margin-top: -40px; */
+  }
+  .menu-card .card-text h3 {
+    color: rgb(14, 250, 14);
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .menu-card .card-text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .menu-card .card-icons {
+    color: rgb(14, 250, 14);
+    cursor: pointer;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  .menu-card .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .menu-card .menu-btn:hover {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  /* End of Menu Section */
+  
+  
+
+
+
+ 

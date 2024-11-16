@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags%}
+<div class="container" style="height: 60%; width:60%;">
+    <h1>sing page</h1>
+   
+    <form action="" method="post">
+        {% csrf_token%}
+        {{from|crispy}}
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Log in</button>
+        </div>
+        <hr>
+        <p style="text-align: center; padding: 5px;">you have a alredy account
+            <a href="{% url 'login'%}"> Longin</a>
+        </p>
+        
+        
+    </form>
+   
+</div>
+{% include 'home.html' %}
+
+
+{% endblock content %}

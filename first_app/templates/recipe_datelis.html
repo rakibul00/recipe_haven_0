@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container m-5">
+  <div class="row g-0 w-100 h-100">
+    <div class="col-md-4">
+      <img src="{{recipe.image.url}}" class="img-fluid rounded-start" alt="...">
+    </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Recipe Nmae: {{recipe.title}}</h5>
+          <h6 class="card-title">Recipe category: {{recipe.category}}</h6>
+          <p class="card-text text-bold"> ingredients :{{recipe.instructions}}</p>
+     
+         
+        </div>
+        <a href="{% url 'edit_recipe' recipe.id%}" class="btn btn-outline-warning mx-2" type="submit">
+         Edit your recipe
+      </a>
+        
+      </div>
+    </div>
+    
+</div>
+{% include 'footer.html' %}
+{% endblock content %}
+

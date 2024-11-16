@@ -1,0 +1,21 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container m-4 text-center" >
+
+    <h2>{{ request.user.username }}'s Profile</h2>
+<h3>Your all added Recipes</h3>
+<div class="d-grid  col-6 mx-auto">
+    <a href="{% url 'menu'%}" class="btn btn-outline-success mx-2" type="submit">
+        See all added your recipe
+    </a>
+
+</div>
+
+</div>
+
+
+{% include 'footer.html' %}
+{% endblock content %}
